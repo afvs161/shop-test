@@ -1,0 +1,14 @@
+.pagination-btn-wrapper {
+	margin-bottom: 1rem;
+}
+
+.pagination-btn-wrapper button {
+	border: none;
+	outline: none;
+	padding: 0.25rem 1rem;
+	background-color: #272727;
+	color: #fff;
+	border-radius: 4px;
+	margin: 0 2px;
+	opacity: 0.8;
+}

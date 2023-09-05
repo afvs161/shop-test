@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./src/css/modal.css" />
+		<link rel="stylesheet" href="./src/css/navbar.css" />
+		<link rel="stylesheet" href="./src/css/pagination.css" />
+		<link rel="stylesheet" href="./src/css/main.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- basket modal -->
+		<div class="modal-wrapper hide" id="modalWrapper">
+			<div class="modal" id="modal">
+				<!-- modal header -->
+				<div class="modal-header">
+					<h3>My cart</h3>
+					<h4>Total price: $<span id="totalPriceSpan">0</span></h4>
+				</div>
+				<!-- modal content -->
+				<div class="modal-item-wrapper" id="modalContent">
+					<h3>No product in basket :(</h3>
+				</div>
+			</div>
+		</div>
+		<button class="modal-btn" id="modalBtn">Cart</button>
+
+		<div class="con">
+			<!-- header -->
+			<div class="nav">
+				<a href="#">Site Name</a>
+
+				<!-- filter category -->
+				<select name="category" id="category">
+					<option value="1">Category not found</option>
+				</select>
+			</div>
+
+			<div class="content">
+				<!-- pagination -->
+				<div class="pagination-btn-wrapper" id="paginationBtnWrapper"></div>
+
+				<!-- wrapper -->
+				<div class="item-wrapper" id="itemWrapper">
+					<!-- products will be displayed here -->
+          <!-- preload -->
+					<div class="loader" id="loader">
+						<h1>Loading...</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./src/js/main.js"></script>
+	</body>
+</html>
